@@ -97,5 +97,19 @@
                 border:1px solid #006b98;
             }
         }
+        a.csdn {
+            background:url('./img/csdn.png') center no-repeat #005a87;
+            border:1px solid #005a87;
+            &:hover {
+                border:1px solid #006b98;
+            }
+        }
+        a.hacpai {
+            background:url('./img/hacpai.png') center no-repeat #005a87;
+            border:1px solid #005a87;
+            &:hover {
+                border:1px solid #006b98;
+            }
+        }
     }
 }
