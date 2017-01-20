@@ -1,0 +1,45 @@
+language: node_js
+node_js: stable
+
+# S: Build Lifecycle
+install:
+  - cat /home/travis/build.sh
+  - echo "curPath=`pwd`"
+  - ls
+  - cd ..
+  - echo "curPath=`pwd`"
+  - ls
+  - git clone --depth=50 --branch=master https://github.com/maobaolong/mblnote.git mblnote
+  - echo "curPath=`pwd`"
+  - ls
+  - cd maobaolong/Hexo
+  - ls
+  - npm install
+
+
+#before_script:
+ # - npm install -g gulp
+
+script:
+  - hexo g
+
+after_script:
+  - echo "curPath=`pwd`"
+  - ls
+  - mkdir "public/github_blog"
+  - mv -f public/*  public/github_blog/
+  - cd ./public
+  - git init
+  - git config user.name "maobaolong"
+  - git config user.email "maobaolong@139.com"
+  - git add .
+  - git commit -m "Update docs"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+# E: Build LifeCycle
+
+branches:
+  only:
+    - master
+env:
+ global:
+   - GH_REF: github.com/maobaolong/maobaolong.github.io.git
