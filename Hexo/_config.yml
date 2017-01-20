@@ -18,7 +18,7 @@ permalink: :year/:month/:day/:title/
 permalink_defaults:
 
 # Directory
-source_dir: ../../note/public/
+source_dir: ../../mblnote/public/
 # source_dir: ../../../../../seafile/seafile_rpi/Seafile/note/
 public_dir: public
 tag_dir: tags
