@@ -8,12 +8,14 @@ menu:
 
 # SubNav
 subnav:
-  github: "#"
-  weibo: "#"
-  rss: "#"
-  zhihu: "#"
+  github: "https://github.com/maobaolong"
+  #weibo: "#"
+  #rss: "#"
+  #zhihu: "#"
   #douban: "#"
-  #mail: "#"
+  mail: "maobaolong@139.com"
+  csdn: "http://blog.csdn.net/maobaolong"
+  hacpai: "https://hacpai.com/member/maobaolong"
   #facebook: "#"
   #google: "#"
   #twitter: "#"
@@ -68,5 +70,7 @@ friends:
   home: http://maobaolong.f3322.net:9999
   herHome: http://maobaolong.gicp.net:9999
   个人博客: http://maobaolong.f3322.net/blog
+  CSDN博客: http://blog.csdn.net/maobaolong
+  黑客派: https://hacpai.com/member/maobaolong
 
 aboutme: 多学多记<br><br>多分享<br>谢谢大家
