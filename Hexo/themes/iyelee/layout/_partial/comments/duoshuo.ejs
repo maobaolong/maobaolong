@@ -11,7 +11,7 @@
         }
 
         $(function() { 
-            var jsonUrl = "http://api.duoshuo.com/threads/counts.jsonp?short_name=<%=theme.duoshuo.domain%>&threads=<%=key%>&callback=?";
+            var jsonUrl = "https://api.duoshuo.com/threads/counts.jsonp?short_name=<%=theme.duoshuo.domain%>&threads=<%=key%>&callback=?";
             $.getJSON(jsonUrl, function(result) {
                 $.each(result.response, function(i, field) {
                     var value = field.comments;
