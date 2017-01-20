@@ -26,7 +26,7 @@ rss: /atom.xml
 # 是否需要修改 root 路径
 # 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，
 # 请将您的 url 设为 http://yoursite.com/blog 并把 root 设为 /blog/。
-root: /github_blog/
+root:
 
 # Content
 excerpt_link: more
@@ -44,7 +44,7 @@ google_analytics: ''
 favicon: /favicon.png
 
 #你的头像url
-avatar: /github_blog/avatar.jpg
+avatar: /avatar.jpg
 
 #是否开启分享
 share_jia: true
