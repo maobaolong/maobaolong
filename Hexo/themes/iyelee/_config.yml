@@ -7,9 +7,9 @@ Yelee: "3.5"
 ## About Page: `hexo new page about`
 ## Tags Cloud Page: `hexo new page tags`
 menu:
-  所有文章: ../archives
-  标签云: ../tags/
-  留言板: ../about/
+  所有文章: /archives
+  标签云: /tags/
+  留言板: /about/
 
 
 # Link to your avatar | 填写头像地址
@@ -21,7 +21,7 @@ favicon: /resources/avatar.jpg
 # If your site' url is 'http://yoursite.com/blog', set root_url as '/blog/'
 # 网站若存放在子目录，请按上面格式填写
 # https://hexo.io/docs/configuration.html#URL
-root_url: /github_blog/
+root_url: /
 
 # Social info. Bar | 社交信息展示
 ## Keep "mailto:" in Email | 设置 Email 时保留 "mailto:"
@@ -45,7 +45,7 @@ subnav:
   #Google: "#"
   #Twitter: "//twitter.com/"
   #LinkedIn: "#"
-  #QQ: "#"
+  QQ: "307499405"
   #微信: "Wechat"
   #PayPal: "#"
   #StackOverflow: "#"
