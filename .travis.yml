@@ -26,8 +26,8 @@ script:
 after_script:
   - echo "curPath=`pwd`"
   - ls
-#  - mkdir "public/github_blog"
-#  - mv -f public/*  public/github_blog/
+  - mkdir "public/blog"
+  - mv -f public/*  public/blog/
   - cd ./public
   - git init
   - git config user.name "maobaolong"
@@ -35,6 +35,7 @@ after_script:
   - git add .
   - git commit -m "Update docs"
   - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+  - git push --force --quiet "https://${GL_TOKEN}@${GL_REF}" master:master
 # E: Build LifeCycle
 
 branches:
@@ -43,3 +44,4 @@ branches:
 env:
  global:
    - GH_REF: github.com/maobaolong/maobaolong.github.io.git
+   - GL_REF: gitlab.com/maobaolong/maobaolong.gitlab.io.git

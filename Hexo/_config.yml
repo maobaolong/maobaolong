@@ -12,8 +12,8 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://maobaolong.github.io/
-root: /
+url: /
+root: "/blog/"
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -73,7 +73,9 @@ theme: iyelee
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/maobaolong/maobaolong.github.io.git
+#  repo: https://github.com/maobaolong/maobaolong.github.io.git
+  repo: https://git.oschina.net/maobaolong/maobaolong.git
+#  repo: https://git.coding.net/maobaolong/maobaolong.coding.me.git
 
 index_generator:
   per_page: 15
