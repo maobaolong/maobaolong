@@ -26,8 +26,8 @@ script:
 after_script:
   - echo "curPath=`pwd`"
   - ls
-  - mkdir "public/blog"
-  - mv -f public/*  public/blog/
+#  - mkdir "public/blog"
+#  - mv -f public/*  public/blog/
   - cd ./public
   - git init
   - git config user.name "maobaolong"
